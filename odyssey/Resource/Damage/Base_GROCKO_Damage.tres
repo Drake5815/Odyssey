@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Damage_Component" load_steps=2 format=3 uid="uid://dfp3kh1m83th6"]
+
+[ext_resource type="Script" uid="uid://c5idxntmdqmjn" path="res://Component/Damage_Component.gd" id="1_mq6t2"]
+
+[resource]
+script = ExtResource("1_mq6t2")
+Damage = 7.0
+Crit_Rate = 0.1
+Crit_Multiplier = 0.5
+metadata/_custom_type_script = "uid://c5idxntmdqmjn"

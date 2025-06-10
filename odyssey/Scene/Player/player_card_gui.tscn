@@ -1,0 +1,106 @@
+[gd_scene load_steps=7 format=3 uid="uid://no4boe8nsi7l"]
+
+[ext_resource type="Script" uid="uid://bgy7muynpcnhi" path="res://Scene/Player/player_card_gui.gd" id="1_8etmd"]
+[ext_resource type="Texture2D" uid="uid://b8t13d5lmmfkd" path="res://Assets/Player_GUI/Character_Border.png" id="1_nq8gi"]
+[ext_resource type="LabelSettings" uid="uid://dsap870lvcrgo" path="res://Resource/Label/PlayerGUI_Label.tres" id="3_bsh27"]
+[ext_resource type="Texture2D" uid="uid://dgscqe6rh0e8v" path="res://Assets/Player_GUI/Progression-Bar.png" id="4_qm8k4"]
+[ext_resource type="Texture2D" uid="uid://bwavoedt2x40l" path="res://Assets/Player_GUI/ProgressionBar-progression.png" id="5_tgeij"]
+[ext_resource type="Texture2D" uid="uid://5vxbuiuvwrph" path="res://Assets/Player_GUI/Test_Icon.png" id="6_tgeij"]
+
+[node name="Player-Card" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1040.0
+offset_bottom = -560.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8etmd")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("1_nq8gi")
+
+[node name="Pre-set Label" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Name" type="Label" parent="Pre-set Label"]
+layout_mode = 0
+offset_left = 102.0
+offset_top = 59.0
+offset_right = 142.0
+offset_bottom = 67.0
+text = "Name:"
+label_settings = ExtResource("3_bsh27")
+
+[node name="Health" type="Label" parent="Pre-set Label"]
+layout_mode = 0
+offset_left = 102.0
+offset_top = 74.0
+offset_right = 158.0
+offset_bottom = 82.0
+text = "Health:"
+label_settings = ExtResource("3_bsh27")
+
+[node name="Mana" type="Label" parent="Pre-set Label"]
+layout_mode = 0
+offset_left = 102.0
+offset_top = 99.0
+offset_right = 142.0
+offset_bottom = 107.0
+text = "Mana:"
+label_settings = ExtResource("3_bsh27")
+
+[node name="Progression_Bar" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Health_ProgressionBar" type="TextureProgressBar" parent="Progression_Bar"]
+layout_mode = 0
+offset_left = 102.0
+offset_top = 82.0
+offset_right = 150.0
+offset_bottom = 98.0
+scale = Vector2(2.5, 2.5)
+texture_over = ExtResource("4_qm8k4")
+texture_progress = ExtResource("5_tgeij")
+
+[node name="Mana_ProgressionBar" type="TextureProgressBar" parent="Progression_Bar"]
+layout_mode = 0
+offset_left = 102.0
+offset_top = 107.0
+offset_right = 150.0
+offset_bottom = 123.0
+scale = Vector2(2.5, 2.5)
+texture_over = ExtResource("4_qm8k4")
+texture_progress = ExtResource("5_tgeij")
+
+[node name="Changable_Label" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Character_Name" type="Label" parent="Changable_Label"]
+layout_mode = 0
+offset_left = 142.0
+offset_top = 59.0
+offset_right = 174.0
+offset_bottom = 67.0
+text = "Test"
+label_settings = ExtResource("3_bsh27")
+
+[node name="Player_Icon" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 40.0
+offset_right = 60.0
+offset_bottom = 80.0
+scale = Vector2(2, 2)
+texture = ExtResource("6_tgeij")

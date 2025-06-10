@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://byb008rxw12ys"]
+
+[ext_resource type="Resource" uid="uid://dwm4dsfh8sg1o" path="res://Resource/Damage/Base_ALMA_Damage.tres" id="1_4uxb2"]
+[ext_resource type="Script" uid="uid://bhmlo2x3y68na" path="res://Component/Character.gd" id="1_mspmm"]
+[ext_resource type="Resource" uid="uid://dtx3c1avayceq" path="res://Resource/Stats/Base_75.tres" id="2_epyqi"]
+[ext_resource type="Resource" uid="uid://clp270xvclgk1" path="res://Resource/Stats/Base_50.tres" id="3_2t4hd"]
+
+[resource]
+script = ExtResource("1_mspmm")
+Name = "Alma"
+Health = ExtResource("2_epyqi")
+Mana = ExtResource("3_2t4hd")
+Damage = ExtResource("1_4uxb2")
+Strength = 13
+Dexterity = 10
+Constitution = 12
+Intelligence = 10
+Wisdom = 13
+Charisma = 10
+metadata/_custom_type_script = "uid://bhmlo2x3y68na"

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://c80x8kuvgqrla"]
+
+[ext_resource type="Script" uid="uid://bhmlo2x3y68na" path="res://Component/Character.gd" id="1_eorym"]
+[ext_resource type="Resource" uid="uid://lck6uook0f2o" path="res://Resource/Stats/Base_110.tres" id="1_htugo"]
+[ext_resource type="Resource" uid="uid://dfp3kh1m83th6" path="res://Resource/Damage/Base_GROCKO_Damage.tres" id="1_hu6fk"]
+[ext_resource type="Resource" uid="uid://b0kr5nabkywep" path="res://Resource/Stats/Base_60.tres" id="2_hu6fk"]
+
+[resource]
+script = ExtResource("1_eorym")
+Name = "Grocko"
+Health = ExtResource("1_htugo")
+Mana = ExtResource("2_hu6fk")
+Damage = ExtResource("1_hu6fk")
+Strength = 17
+Dexterity = 20
+Constitution = 15
+Intelligence = 9
+Wisdom = 10
+Charisma = 7
+metadata/_custom_type_script = "uid://bhmlo2x3y68na"

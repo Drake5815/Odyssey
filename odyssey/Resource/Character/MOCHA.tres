@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://cqub0lelbwobc"]
+
+[ext_resource type="Resource" uid="uid://chq5uesfnu7ym" path="res://Resource/Damage/Base_MOCHA_Damage.tres" id="1_51jto"]
+[ext_resource type="Script" uid="uid://bhmlo2x3y68na" path="res://Component/Character.gd" id="1_ue42l"]
+[ext_resource type="Resource" uid="uid://dtx3c1avayceq" path="res://Resource/Stats/Base_75.tres" id="2_ei37r"]
+[ext_resource type="Resource" uid="uid://clp270xvclgk1" path="res://Resource/Stats/Base_50.tres" id="3_1yire"]
+
+[resource]
+script = ExtResource("1_ue42l")
+Name = "Mocha"
+Health = ExtResource("2_ei37r")
+Mana = ExtResource("3_1yire")
+Damage = ExtResource("1_51jto")
+Strength = 15
+Dexterity = 14
+Constitution = 12
+Intelligence = 11
+Wisdom = 4
+Charisma = 8
+metadata/_custom_type_script = "uid://bhmlo2x3y68na"

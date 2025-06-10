@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://blu11uiaydwpd"]
+
+[ext_resource type="Script" uid="uid://bhmlo2x3y68na" path="res://Component/Character.gd" id="1_h0vph"]
+[ext_resource type="Resource" uid="uid://dg3pbbtlmp0ck" path="res://Resource/Damage/Base_ZEIG_Damage.tres" id="1_j1r3a"]
+[ext_resource type="Resource" uid="uid://cg1voeufmnbvo" path="res://Resource/Stats/Base_100.tres" id="2_qjs6d"]
+[ext_resource type="Resource" uid="uid://b0kr5nabkywep" path="res://Resource/Stats/Base_60.tres" id="3_6k8ou"]
+
+[resource]
+script = ExtResource("1_h0vph")
+Name = "Zeig"
+Health = ExtResource("2_qjs6d")
+Mana = ExtResource("3_6k8ou")
+Damage = ExtResource("1_j1r3a")
+Strength = 22
+Dexterity = 16
+Constitution = 20
+Intelligence = 19
+Wisdom = 12
+Charisma = 11
+metadata/_custom_type_script = "uid://bhmlo2x3y68na"

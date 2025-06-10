@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://cno5jpda7ou4v"]
+
+[ext_resource type="Texture2D" uid="uid://dp6sauq4yisv3" path="res://Assets/Player_GUI/Side_Navbar.png" id="1_gbpdn"]
+[ext_resource type="Script" uid="uid://b4edyrd0s1o8t" path="res://Scene/Player/NavBar_Action.gd" id="1_qq4ch"]
+[ext_resource type="Texture2D" uid="uid://wleaj3ysf2cu" path="res://Assets/Player_GUI/Turn_Label_Background.png" id="3_0mav5"]
+[ext_resource type="Texture2D" uid="uid://c8c40jtvwuis8" path="res://Assets/Player_GUI/GRAPHIC_HEADER_CONTAINER.png" id="3_0ufhg"]
+[ext_resource type="LabelSettings" uid="uid://dsap870lvcrgo" path="res://Resource/Label/PlayerGUI_Label.tres" id="4_0mav5"]
+
+[node name="Action_Interface" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qq4ch")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_top = 200.0
+offset_right = 32.0
+offset_bottom = 328.0
+scale = Vector2(3, 3)
+texture = ExtResource("1_gbpdn")
+
+[node name="HEADER" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0.470588)
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 64.0
+texture = ExtResource("3_0ufhg")
+
+[node name="Header_Turn_Label" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 144.0
+offset_bottom = 64.0
+texture = ExtResource("3_0mav5")
+
+[node name="Label" type="Label" parent="Header_Turn_Label"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 36.0
+offset_right = 63.0
+offset_bottom = 44.0
+text = "TURN:"
+label_settings = ExtResource("4_0mav5")

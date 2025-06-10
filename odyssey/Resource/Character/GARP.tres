@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://kqwsiopna0w1"]
+
+[ext_resource type="Resource" uid="uid://dkbj3x8ampd08" path="res://Resource/Damage/Base_GARP_Damage.tres" id="1_aybxc"]
+[ext_resource type="Script" uid="uid://bhmlo2x3y68na" path="res://Component/Character.gd" id="1_fxunr"]
+[ext_resource type="Resource" uid="uid://i8tkwwj18u1p" path="res://Resource/Stats/Base_90.tres" id="2_r12o5"]
+[ext_resource type="Resource" uid="uid://dbf205ggltg2y" path="res://Resource/Stats/Base_40.tres" id="3_c150c"]
+
+[resource]
+script = ExtResource("1_fxunr")
+Name = "Garp"
+Health = ExtResource("2_r12o5")
+Mana = ExtResource("3_c150c")
+Damage = ExtResource("1_aybxc")
+Strength = 19
+Dexterity = 22
+Constitution = 11
+Intelligence = 13
+Wisdom = 7
+Charisma = 22
+metadata/_custom_type_script = "uid://bhmlo2x3y68na"
