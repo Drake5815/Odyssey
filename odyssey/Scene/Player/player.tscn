@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bvimwqccfblgj"]
+[gd_scene load_steps=5 format=3 uid="uid://bvimwqccfblgj"]
 
 [ext_resource type="PackedScene" uid="uid://no4boe8nsi7l" path="res://Scene/Player/player_card_gui.tscn" id="1_67a6e"]
-[ext_resource type="PackedScene" uid="uid://cno5jpda7ou4v" path="res://Scene/Player/NavBar_Action.tscn" id="2_yic5t"]
+[ext_resource type="Script" uid="uid://32p5571t0us" path="res://Scene/Player/Party_script.gd" id="1_uuj77"]
+[ext_resource type="PackedScene" uid="uid://nph57co4i4fx" path="res://Scene/Player/NavBar_Action.tscn" id="2_yic5t"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a1qst"]
 
@@ -35,26 +36,32 @@ anchors_preset = 0
 offset_right = 1280.0
 offset_bottom = 720.0
 
-[node name="Player-Card_01" parent="GUI" instance=ExtResource("1_67a6e")]
+[node name="Party" type="Control" parent="GUI"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_uuj77")
+
+[node name="Player-Card_01" parent="GUI/Party" instance=ExtResource("1_67a6e")]
 layout_mode = 1
 offset_left = 464.0
 offset_top = 560.0
-offset_right = -576.0
-offset_bottom = 0.0
+offset_right = 424.0
+offset_bottom = 520.0
 
-[node name="Player-Card_02" parent="GUI" instance=ExtResource("1_67a6e")]
+[node name="Player-Card_02" parent="GUI/Party" instance=ExtResource("1_67a6e")]
 layout_mode = 1
 offset_left = 720.0
 offset_top = 560.0
-offset_right = -320.0
-offset_bottom = 0.0
+offset_right = 680.0
+offset_bottom = 520.0
 
-[node name="Player-Card_03" parent="GUI" instance=ExtResource("1_67a6e")]
+[node name="Player-Card_03" parent="GUI/Party" instance=ExtResource("1_67a6e")]
 layout_mode = 1
 offset_left = 976.0
 offset_top = 560.0
-offset_right = -74.0
-offset_bottom = 0.0
+offset_right = 936.0
+offset_bottom = 520.0
 
 [node name="Action_Interface" parent="GUI" instance=ExtResource("2_yic5t")]
 layout_mode = 1
