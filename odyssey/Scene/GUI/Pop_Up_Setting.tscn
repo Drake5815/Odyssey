@@ -1,0 +1,98 @@
+[gd_scene load_steps=4 format=3 uid="uid://dk7641f5e36t"]
+
+[ext_resource type="Script" uid="uid://bswp2imr2ohgs" path="res://Scene/GUI/pop_up_setting.gd" id="1_ifod2"]
+[ext_resource type="Texture2D" uid="uid://d4llvraqhxjct" path="res://Assets/Player_GUI/Button_Texture.png" id="2_ov8wp"]
+[ext_resource type="LabelSettings" uid="uid://b1t3uk0wcjuee" path="res://Resource/Label/Button_Text.tres" id="3_qnde6"]
+
+[node name="Pop-Up" type="Control"]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 0
+offset_right = 144.0
+offset_bottom = 256.0
+script = ExtResource("1_ifod2")
+
+[node name="Resume" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 144.0
+offset_bottom = 64.0
+texture_normal = ExtResource("2_ov8wp")
+
+[node name="Label" type="Label" parent="Resume"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 18.0
+offset_right = 116.0
+offset_bottom = 46.0
+text = "Resume"
+label_settings = ExtResource("3_qnde6")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HowToPlay" type="TextureButton" parent="."]
+layout_mode = 0
+offset_top = 64.0
+offset_right = 144.0
+offset_bottom = 128.0
+texture_normal = ExtResource("2_ov8wp")
+
+[node name="Label" type="Label" parent="HowToPlay"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 18.0
+offset_right = 116.0
+offset_bottom = 46.0
+text = "How To Play"
+label_settings = ExtResource("3_qnde6")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Vloume" type="TextureButton" parent="."]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 144.0
+offset_bottom = 192.0
+texture_normal = ExtResource("2_ov8wp")
+
+[node name="Label" type="Label" parent="Vloume"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 18.0
+offset_right = 116.0
+offset_bottom = 46.0
+text = "Volume"
+label_settings = ExtResource("3_qnde6")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Exit" type="TextureButton" parent="."]
+layout_mode = 0
+offset_top = 192.0
+offset_right = 144.0
+offset_bottom = 256.0
+texture_normal = ExtResource("2_ov8wp")
+
+[node name="Label" type="Label" parent="Exit"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 18.0
+offset_right = 116.0
+offset_bottom = 46.0
+text = "Exit"
+label_settings = ExtResource("3_qnde6")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="mouse_entered" from="Resume" to="." method="_Resume_Button_hovered"]
+[connection signal="mouse_exited" from="Resume" to="." method="exit_hover"]
+[connection signal="mouse_exited" from="Resume" to="." method="_Resume_Button_Exit_hovered"]
+[connection signal="pressed" from="Resume" to="." method="resume"]
+[connection signal="mouse_entered" from="HowToPlay" to="." method="_HTP_Button_hovered"]
+[connection signal="mouse_exited" from="HowToPlay" to="." method="exit_hover"]
+[connection signal="mouse_exited" from="HowToPlay" to="." method="_HTP_Button_Exit_hovered"]
+[connection signal="mouse_entered" from="Vloume" to="." method="_Volume_Button_hovered"]
+[connection signal="mouse_exited" from="Vloume" to="." method="exit_hover"]
+[connection signal="mouse_exited" from="Vloume" to="." method="_Volume_Button_Exit_hovered"]
+[connection signal="mouse_entered" from="Exit" to="." method="_Exit_Button_hovered"]
+[connection signal="mouse_exited" from="Exit" to="." method="exit_hover"]
+[connection signal="mouse_exited" from="Exit" to="." method="_Exit_Button_Exit_hovered"]
