@@ -14,5 +14,5 @@ func add_character_to_party(value:Character)->void:
 	var index : int = 0
 	for card in CharacterCards_Array:
 		if !card.has_Character():
-			pass
+			card.Insert_Character(value)
 		++index

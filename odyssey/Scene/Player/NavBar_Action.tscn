@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://nph57co4i4fx"]
 
-[ext_resource type="Script" uid="uid://b4edyrd0s1o8t" path="res://Scene/Player/NavBar_Action.gd" id="1_qq4ch"]
+[ext_resource type="Script" uid="uid://b4edyrd0s1o8t" path="res://Scene/Player/Scripts/NavBar_Action.gd" id="1_qq4ch"]
 [ext_resource type="Texture2D" uid="uid://wleaj3ysf2cu" path="res://Assets/Player_GUI/Turn_Label_Background.png" id="3_0mav5"]
 [ext_resource type="Texture2D" uid="uid://c8c40jtvwuis8" path="res://Assets/Player_GUI/GRAPHIC_HEADER_CONTAINER.png" id="3_0ufhg"]
 [ext_resource type="LabelSettings" uid="uid://dsap870lvcrgo" path="res://Resource/Label/PlayerGUI_Label.tres" id="4_0mav5"]
@@ -70,6 +70,7 @@ offset_bottom = 56.0
 texture = ExtResource("7_2r26y")
 
 [node name="Pop-Up" parent="." instance=ExtResource("8_2r26y")]
+visible = false
 offset_left = 568.0
 offset_top = 232.0
 offset_right = 712.0

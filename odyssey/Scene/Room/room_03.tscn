@@ -1,0 +1,382 @@
+[gd_scene load_steps=4 format=3 uid="uid://dga8eo4eixc4h"]
+
+[ext_resource type="Script" uid="uid://b0u7cgt6fsc0u" path="res://addons/level_block/level_block_node.gd" id="1_rgn27"]
+[ext_resource type="Material" uid="uid://c71yladfjhgud" path="res://addons/level_block/default_material.tres" id="2_h38m3"]
+[ext_resource type="Texture2D" uid="uid://bda3bsmfaib0b" path="res://Assets/World/Material/001_Stone.png" id="3_ga2x3"]
+
+[node name="Room_03" type="Node3D"]
+
+[node name="LevelBlock" type="Node3D" parent="."]
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock3" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+east_face = 1
+west_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock4" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+east_face = 1
+south_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock5" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock6" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+north_face = 1
+south_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock7" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+east_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock8" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock9" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+east_face = 1
+west_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock10" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+north_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock11" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock12" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+north_face = 1
+south_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock13" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+north_face = 1
+west_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock14" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+north_face = 1
+west_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock15" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+north_face = 1
+east_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock16" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+east_face = 1
+south_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock17" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+south_face = 1
+west_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock18" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 2)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+east_face = 1
+west_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock19" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 4)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+east_face = 1
+west_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock20" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 6)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+north_face = 1
+south_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock21" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 6)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+north_face = 1
+south_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock22" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 6)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+south_face = 1
+west_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock23" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -2)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+north_face = 1
+east_face = 1
+west_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock24" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+north_face = 1
+south_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock25" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -6)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+north_face = 1
+east_face = 1
+south_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock26" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+east_face = 1
+west_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock27" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 4)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+east_face = 1
+west_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock28" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+east_face = 1
+south_face = 1
+west_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock29" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -6)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+north_face = 1
+south_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock30" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -6)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+north_face = 1
+south_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock31" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -6)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+north_face = 1
+west_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"
+
+[node name="LevelBlock32" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -4)
+script = ExtResource("1_rgn27")
+material = ExtResource("2_h38m3")
+texture_sheet = ExtResource("3_ga2x3")
+texture_size = 24.0
+east_face = 1
+south_face = 1
+west_face = 1
+top_face = 0
+bottom_face = 2
+metadata/_custom_type_script = "uid://b0u7cgt6fsc0u"

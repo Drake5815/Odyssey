@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://no4boe8nsi7l"]
 
-[ext_resource type="Script" uid="uid://bgy7muynpcnhi" path="res://Scene/Player/player_card_gui.gd" id="1_8etmd"]
+[ext_resource type="Script" uid="uid://bgy7muynpcnhi" path="res://Scene/Player/Scripts/player_card_gui.gd" id="1_8etmd"]
 [ext_resource type="Texture2D" uid="uid://b8t13d5lmmfkd" path="res://Assets/Player_GUI/Character_Border.png" id="1_nq8gi"]
 [ext_resource type="LabelSettings" uid="uid://dsap870lvcrgo" path="res://Resource/Label/PlayerGUI_Label.tres" id="3_bsh27"]
 [ext_resource type="Texture2D" uid="uid://dgscqe6rh0e8v" path="res://Assets/Player_GUI/Progression-Bar.png" id="4_qm8k4"]

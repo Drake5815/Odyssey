@@ -6,7 +6,11 @@ extends Control
 @onready var Volume_Button : TextureButton = $Vloume
 @onready var Exit_Button : TextureButton = $Exit
 
+var parent
 var texture_button : TextureButton = null
+
+func _ready()->void:
+	parent = get_parent()
 
 func hovered()->void:
 	texture_button.modulate.a = 0.35
@@ -16,9 +20,12 @@ func exit_hover()->void:
 
 func resume()->void:
 	print("Resume")
+	parent.Show_Setting_Screen.emit()
 	get_tree().paused = false
-	get_parent().Show_Setting_Screen.emit()
-
+func HTP()->void:
+	print("How To Play!")
+func Volume()->void:
+	print("Volume")
 func exit()->void:
 	GameManager.exit.emit()
 

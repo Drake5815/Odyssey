@@ -1,12 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://bvimwqccfblgj"]
+[gd_scene load_steps=7 format=3 uid="uid://bvimwqccfblgj"]
 
 [ext_resource type="PackedScene" uid="uid://no4boe8nsi7l" path="res://Scene/Player/player_card_gui.tscn" id="1_67a6e"]
-[ext_resource type="Script" uid="uid://32p5571t0us" path="res://Scene/Player/Party_script.gd" id="1_uuj77"]
+[ext_resource type="Script" uid="uid://bmc418hmocowm" path="res://Scene/Player/player.gd" id="1_g0r71"]
+[ext_resource type="Script" uid="uid://32p5571t0us" path="res://Scene/Player/Scripts/Party_script.gd" id="1_uuj77"]
 [ext_resource type="PackedScene" uid="uid://nph57co4i4fx" path="res://Scene/Player/NavBar_Action.tscn" id="2_yic5t"]
+[ext_resource type="Script" uid="uid://b3ig4hnk3i7jh" path="res://Scene/Player/movement_state.gd" id="5_88wa8"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a1qst"]
 
 [node name="Player" type="Node3D"]
+script = ExtResource("1_g0r71")
 
 [node name="Front" type="RayCast3D" parent="."]
 
@@ -65,3 +68,10 @@ offset_bottom = 520.0
 
 [node name="Action_Interface" parent="GUI" instance=ExtResource("2_yic5t")]
 layout_mode = 1
+
+[node name="State_Machine" type="Node" parent="."]
+
+[node name="Movement_State" type="Node" parent="State_Machine"]
+script = ExtResource("5_88wa8")
+
+[node name="Battle_State" type="Node" parent="State_Machine"]
