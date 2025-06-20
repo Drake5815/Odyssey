@@ -1,19 +1,24 @@
-[gd_scene load_steps=7 format=3 uid="uid://bvimwqccfblgj"]
+[gd_scene load_steps=9 format=3 uid="uid://bvimwqccfblgj"]
 
 [ext_resource type="PackedScene" uid="uid://no4boe8nsi7l" path="res://Scene/Player/player_card_gui.tscn" id="1_67a6e"]
 [ext_resource type="Script" uid="uid://bmc418hmocowm" path="res://Scene/Player/player.gd" id="1_g0r71"]
 [ext_resource type="Script" uid="uid://32p5571t0us" path="res://Scene/Player/Scripts/Party_script.gd" id="1_uuj77"]
 [ext_resource type="PackedScene" uid="uid://nph57co4i4fx" path="res://Scene/Player/NavBar_Action.tscn" id="2_yic5t"]
 [ext_resource type="Script" uid="uid://b3ig4hnk3i7jh" path="res://Scene/Player/movement_state.gd" id="5_88wa8"]
+[ext_resource type="Script" uid="uid://vaxrttwqdl1v" path="res://Scene/Player/state_machine.gd" id="5_jd8gp"]
+[ext_resource type="Script" uid="uid://cw0hn2mq7nhh" path="res://Scene/Player/battle_state.gd" id="7_ewflj"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a1qst"]
 
-[node name="Player" type="Node3D"]
+[node name="Player" type="Node3D" node_paths=PackedStringArray("Camera")]
 script = ExtResource("1_g0r71")
+Camera = NodePath("SubViewportContainer/SubViewport/Camera3D")
 
 [node name="Front" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -8.74228e-08, -1, 0, 2, -4.37114e-08, 0, 0, 0)
 
 [node name="Back" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -8.74228e-08, 1, 0, -2, -4.37114e-08, 0, 0, 0)
 
 [node name="Area3D" type="Area3D" parent="."]
 
@@ -32,6 +37,7 @@ render_target_update_mode = 4
 [node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport"]
 
 [node name="OmniLight3D" type="OmniLight3D" parent="SubViewportContainer/SubViewport/Camera3D"]
+light_color = Color(0, 0.784314, 1, 1)
 
 [node name="GUI" type="Control" parent="."]
 layout_mode = 3
@@ -69,9 +75,16 @@ offset_bottom = 520.0
 [node name="Action_Interface" parent="GUI" instance=ExtResource("2_yic5t")]
 layout_mode = 1
 
-[node name="State_Machine" type="Node" parent="."]
+[node name="State_Machine" type="Node" parent="." node_paths=PackedStringArray("Movement_State", "Combat_State")]
+script = ExtResource("5_jd8gp")
+Movement_State = NodePath("Movement_State")
+Combat_State = NodePath("Battle_State")
 
-[node name="Movement_State" type="Node" parent="State_Machine"]
+[node name="Movement_State" type="Node" parent="State_Machine" node_paths=PackedStringArray("Parent", "Front_RayCast", "Back_RayCast")]
 script = ExtResource("5_88wa8")
+Parent = NodePath("../..")
+Front_RayCast = NodePath("../../Front")
+Back_RayCast = NodePath("../../Back")
 
 [node name="Battle_State" type="Node" parent="State_Machine"]
+script = ExtResource("7_ewflj")

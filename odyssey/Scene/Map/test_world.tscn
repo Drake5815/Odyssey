@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dev4plbxl1g8p"]
+
+[ext_resource type="PackedScene" uid="uid://drysxadck7xe5" path="res://Scene/Room/room_04.tscn" id="1_kfao5"]
+[ext_resource type="PackedScene" uid="uid://bvimwqccfblgj" path="res://Scene/Player/player.tscn" id="4_8wgev"]
+
+[node name="test_world" type="Node3D"]
+
+[node name="Room_04" parent="." instance=ExtResource("1_kfao5")]
+
+[node name="Player" parent="." instance=ExtResource("4_8wgev")]

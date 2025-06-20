@@ -6,7 +6,7 @@
 [ext_resource type="LabelSettings" uid="uid://dsap870lvcrgo" path="res://Resource/Label/PlayerGUI_Label.tres" id="4_0mav5"]
 [ext_resource type="LabelSettings" uid="uid://bh3o87m4a08df" path="res://Resource/Label/Header_Text.tres" id="4_blg5b"]
 [ext_resource type="Texture2D" uid="uid://c2cg5pign18hy" path="res://Assets/Player_GUI/SettingButton.png" id="7_2r26y"]
-[ext_resource type="LabelSettings" path="res://Resource/Label/Turn_Text.tres" id="7_5al3n"]
+[ext_resource type="LabelSettings" uid="uid://bnj00mx7c533s" path="res://Resource/Label/Turn_Text.tres" id="7_5al3n"]
 [ext_resource type="PackedScene" uid="uid://dk7641f5e36t" path="res://Scene/GUI/Pop_Up_Setting.tscn" id="8_2r26y"]
 
 [node name="Action_Interface" type="Control"]
@@ -71,10 +71,11 @@ texture = ExtResource("7_2r26y")
 
 [node name="Pop-Up" parent="." instance=ExtResource("8_2r26y")]
 visible = false
-offset_left = 568.0
-offset_top = 232.0
-offset_right = 712.0
-offset_bottom = 488.0
+offset_left = 496.0
+offset_top = 104.0
+offset_right = 640.0
+offset_bottom = 360.0
+scale = Vector2(2, 2)
 
 [connection signal="mouse_entered" from="Settings" to="." method="setting_hovered"]
 [connection signal="mouse_exited" from="Settings" to="." method="setting_exit_hover"]
