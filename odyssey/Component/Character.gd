@@ -19,6 +19,8 @@ extends Character_Stats
 
 var Inventory : Dictionary = {}
 
+var Armors : Dictionary = {}
+
 func _init()->void:
 	super(Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma)
 	self.Main_Stats["Health"] = Health.max_value + self.Modifier(Dexterity) + self.Modifier(Constitution)

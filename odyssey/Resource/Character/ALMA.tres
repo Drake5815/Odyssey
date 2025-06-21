@@ -1,9 +1,10 @@
-[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://byb008rxw12ys"]
+[gd_resource type="Resource" script_class="Character" load_steps=6 format=3 uid="uid://byb008rxw12ys"]
 
 [ext_resource type="Resource" uid="uid://dwm4dsfh8sg1o" path="res://Resource/Damage/Base_ALMA_Damage.tres" id="1_4uxb2"]
 [ext_resource type="Script" uid="uid://bhmlo2x3y68na" path="res://Component/Character.gd" id="1_mspmm"]
 [ext_resource type="Resource" uid="uid://dtx3c1avayceq" path="res://Resource/Stats/Base_75.tres" id="2_epyqi"]
 [ext_resource type="Resource" uid="uid://clp270xvclgk1" path="res://Resource/Stats/Base_50.tres" id="3_2t4hd"]
+[ext_resource type="Texture2D" uid="uid://bij8p31f3tncu" path="res://Assets/Character_Icons/Alma.png" id="4_epyqi"]
 
 [resource]
 script = ExtResource("1_mspmm")
@@ -11,6 +12,7 @@ Name = "Alma"
 Health = ExtResource("2_epyqi")
 Mana = ExtResource("3_2t4hd")
 Damage = ExtResource("1_4uxb2")
+Sprite_Icon = ExtResource("4_epyqi")
 Strength = 13
 Dexterity = 10
 Constitution = 12

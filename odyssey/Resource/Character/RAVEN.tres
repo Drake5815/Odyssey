@@ -1,9 +1,10 @@
-[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://dquvxincstthg"]
+[gd_resource type="Resource" script_class="Character" load_steps=6 format=3 uid="uid://dquvxincstthg"]
 
 [ext_resource type="Resource" uid="uid://bgyopc5htkjj2" path="res://Resource/Damage/Base_RAVEN_Damage.tres" id="1_0jk34"]
 [ext_resource type="Script" uid="uid://bhmlo2x3y68na" path="res://Component/Character.gd" id="1_y4cqh"]
 [ext_resource type="Resource" uid="uid://bb2yh5wndm73k" path="res://Resource/Stats/Base_80.tres" id="2_7qf3y"]
 [ext_resource type="Resource" uid="uid://ctmucy06u82ri" path="res://Resource/Stats/Base_70.tres" id="3_ym0j2"]
+[ext_resource type="Texture2D" uid="uid://bmka40grbxiy4" path="res://Assets/Character_Icons/Raven.png" id="4_7qf3y"]
 
 [resource]
 script = ExtResource("1_y4cqh")
@@ -11,6 +12,7 @@ Name = "Raven"
 Health = ExtResource("2_7qf3y")
 Mana = ExtResource("3_ym0j2")
 Damage = ExtResource("1_0jk34")
+Sprite_Icon = ExtResource("4_7qf3y")
 Strength = 19
 Dexterity = 16
 Constitution = 15
