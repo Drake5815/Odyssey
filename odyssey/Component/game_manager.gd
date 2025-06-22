@@ -4,6 +4,8 @@ extends Node
 signal pause
 signal exit
 
+var player_node
+
 func _ready() -> void:
 	self.pause.connect(_pause)
 	self.exit.connect(_exit)

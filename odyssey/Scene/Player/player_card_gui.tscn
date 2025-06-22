@@ -106,3 +106,5 @@ offset_right = 60.0
 offset_bottom = 80.0
 scale = Vector2(2, 2)
 texture = ExtResource("6_tgeij")
+expand_mode = 1
+flip_h = true

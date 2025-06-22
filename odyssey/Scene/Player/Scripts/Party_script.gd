@@ -14,11 +14,16 @@ func _ready() -> void:
 func add_character_to_party(value:Character)->void:
 	if index == 3 :
 		return
+	if value == null:
+		print("something")
+	value._setup()
+	value.to_string()
 	for card in CharacterCards_Array:
-		if !card.has_Character() and index != 3:
+		if !card.has_Character and index != 3:
 			Character_Array.append(value)
 			card.Insert_Character(value)
-		++index
+			++index
+			return
 
 func remove_character(value:Character)->void:
 	if index == 1:
@@ -34,6 +39,6 @@ func PlayerExist(name:String)->bool:
 
 func isPartyFull()->bool:
 	for card in CharacterCards_Array:
-		if !card.has_Character():
+		if !card.has_Character:
 			return false
 	return true

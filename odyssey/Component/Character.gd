@@ -23,12 +23,24 @@ var Armors : Dictionary = {}
 
 func _init()->void:
 	super(Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma)
+	Health = Stat_Component.new()
+	Mana = Stat_Component.new()
+	Damage = Damage_Component.new() 
 	self.Main_Stats["Health"] = Health.max_value + self.Modifier(Dexterity) + self.Modifier(Constitution)
 	self.Main_Stats["Mana"]   = self.Modifier(Wisdom) + self.Modifier(Charisma)
 	self.Main_Stats["Damage"] = self.Modifier(Strength) + self.Modifier(Intelligence)
 	Health.max_value = self.Main_Stats["Health"]
 	Mana.max_value = self.Main_Stats["Mana"]
 	Damage.Damage = self.Main_Stats["Damage"]
+
+func _setup()->void:
+	self.Main_Stats["Health"] = Health.max_value + self.Modifier(Dexterity) + self.Modifier(Constitution)
+	self.Main_Stats["Mana"]   = self.Modifier(Wisdom) + self.Modifier(Charisma)
+	self.Main_Stats["Damage"] = self.Modifier(Strength) + self.Modifier(Intelligence)
+	Health.max_value = self.Main_Stats["Health"]
+	Mana.max_value = self.Main_Stats["Mana"]
+	Damage.Damage = self.Main_Stats["Damage"]
+
 
 func Update_Modifier(name:String,value:float)->void:
 	if not Main_Stats.has(name):
@@ -43,3 +55,6 @@ func Update_Modifier(name:String,value:float)->void:
 		"Wisdom" : stat = "Mana"
 		"Charisma" : stat = "Mana"
 	Main_Stats[stat] += value
+
+func _to_string() -> String:
+	return Name + " | Damage: " + str(self.Main_Stats["Damage"]) + " | Health: " + str(self.Main_Stats["Health"]) + " | Mana: " + str(self.Main_Stats["Mana"])

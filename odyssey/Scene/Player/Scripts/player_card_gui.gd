@@ -11,18 +11,22 @@ signal ManaConsumption(float)
 @onready var Character_Name : Label = $Changable_Label/Character_Name
 
 var party_Character : Character
+var has_Character:bool = false
 
 func _ready() -> void:
 	Damage.connect(Take_Damage)
 	ManaConsumption.connect(Mana_Consumption)
+	Character_Icon.flip_h = false
 
 func Insert_Character(character:Character)->void:
 	party_Character = character
+	has_Character = true
 	Character_Name.text = character.Name
 	Health_ProgressionBar.max_value = character.Main_Stats["Health"]
 	Health_ProgressionBar.value = character.Main_Stats["Health"]
 	Mana_ProgressionBar.max_value = character.Main_Stats["Mana"]
 	Mana_ProgressionBar.value = character.Main_Stats["Mana"]
+	Character_Icon.texture = character.Sprite_Icon
 
 func Take_Damage(value:float)->void:
 	if Health_ProgressionBar.value - value == 0:
@@ -40,6 +44,3 @@ func Mana_Consumption(value:float)->void:
 
 func _update()->void:
 	pass
-
-func has_Character()->bool:
-	return false if !party_Character else true
