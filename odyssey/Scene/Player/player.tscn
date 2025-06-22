@@ -10,9 +10,10 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a1qst"]
 
-[node name="Player" type="Node3D" node_paths=PackedStringArray("Camera")]
+[node name="Player" type="Node3D" node_paths=PackedStringArray("Camera", "Party")]
 script = ExtResource("1_g0r71")
 Camera = NodePath("SubViewportContainer/SubViewport/Camera3D")
+Party = NodePath("GUI/Party")
 
 [node name="Front" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -8.74228e-08, -1, 0, 2, -4.37114e-08, 0, 0, 0)

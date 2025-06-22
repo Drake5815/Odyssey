@@ -28,12 +28,15 @@ func Take_Damage(value:float)->void:
 	if Health_ProgressionBar.value - value == 0:
 		Health_ProgressionBar.value = 0
 		print("Player Dead!!")
-	Health_ProgressionBar.value -= value
+	else:
+		Health_ProgressionBar.value -= value
 
 func Mana_Consumption(value:float)->void:
 	if Mana_ProgressionBar.value == 0 or Mana_ProgressionBar.value - value == 0:
 		print("Insufecient Mana!!")
-	Mana_ProgressionBar.value -= value
+		return
+	else:
+		Mana_ProgressionBar.value -= value
 
 func _update()->void:
 	pass
