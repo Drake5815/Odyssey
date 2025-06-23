@@ -49,13 +49,17 @@ func _input(event: InputEvent) -> void:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 			if Setting_Screen.visible:
 				Setting_Screen.visible = false
+				accept_event()
 			else:
 				setting_press()
+				accept_event()
 	if event.is_action_pressed("Setting_Button"):
 		if Setting_Screen.visible:
 			Setting_Screen.visible = false
+			accept_event()
 		else:
 			setting_press()
+			accept_event()
 
 func setting_press()->void:
 	## PAUSE STATE! == signal [pause_state](Callable)

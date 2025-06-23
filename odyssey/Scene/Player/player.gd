@@ -3,6 +3,7 @@ extends Node3D
 
 @export var Camera : Camera3D
 @export var Party : Party_Script
+@export var State : State_machine
 
 @export var char_arr : Array[Character]
 
