@@ -14,8 +14,10 @@ var party_Character : Character
 var has_Character:bool = false
 
 func _ready() -> void:
+	## SIGNAL CONNECT TO FUNCTIONS
 	Damage.connect(Take_Damage)
 	ManaConsumption.connect(Mana_Consumption)
+	## FLIP TEXTURE TO ORIGINAL ROTATION
 	Character_Icon.flip_h = false
 
 func Insert_Character(character:Character)->void:

@@ -27,21 +27,21 @@ func _init(Str:int, Dex:int, Cons:int, Int:int, Wis:int, Cha:int) -> void:
 func Modifier(val:float)->float:
 	var value_modifire : float
 	match val:
-		1 : value_modifire = -5
-		2, 3 : value_modifire = -4
-		4, 5 : value_modifire = -3
-		6, 7 : value_modifire = -2
-		8, 9 : value_modifire = -1
-		10, 11 : value_modifire = 0
-		12, 13 : value_modifire = 1
-		14, 15 : value_modifire = 2
-		16, 17 : value_modifire = 3
-		18, 19 : value_modifire = 4
-		20, 21 : value_modifire = 5
-		22, 23 : value_modifire = 6
-		24, 25 : value_modifire = 7
-		26, 27 : value_modifire = 8
-		28, 29 : value_modifire = 9
+		1.0 : value_modifire = -5
+		2.0, 3.0 : value_modifire = -4
+		4.0, 5.0 : value_modifire = -3
+		6.0, 7.0 : value_modifire = -2
+		8.0, 9.0 : value_modifire = -1
+		10.0, 11.0 : value_modifire = 0
+		12.0, 13.0 : value_modifire = 1
+		14.0, 15.0 : value_modifire = 2
+		16.0, 17.0 : value_modifire = 3
+		18.0, 19.0 : value_modifire = 4
+		20.0, 21.0 : value_modifire = 5
+		22.0, 23.0 : value_modifire = 6
+		24.0, 25.0 : value_modifire = 7
+		26.0, 27.0 : value_modifire = 8
+		28.0, 29.0 : value_modifire = 9
 		_ : value_modifire = 10
 	return value_modifire
 

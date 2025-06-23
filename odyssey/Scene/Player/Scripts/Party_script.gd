@@ -15,7 +15,7 @@ func add_character_to_party(value:Character)->void:
 	if index == 3 or value == null:
 		return
 	value._setup()
-	value.to_string()
+	print(value.to_string())
 	for card in CharacterCards_Array:
 		if !card.has_Character and index != 3:
 			Character_Array.append(value)

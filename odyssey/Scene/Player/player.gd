@@ -8,7 +8,6 @@ extends Node3D
 
 func _ready() -> void:
 	for char in char_arr:
-		print(char.to_string())
 		recruit_character(char)
 
 func recruit_character(Char:Character)->void:
