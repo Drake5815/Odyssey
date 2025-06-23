@@ -4,10 +4,15 @@ extends Node3D
 @export var Camera : Camera3D
 @export var Party : Party_Script
 
-var char_arr : Array[Character]
+@export var char_arr : Array[Character]
+
+func _ready() -> void:
+	for char in char_arr:
+		print(char.to_string())
+		recruit_character(char)
 
 func recruit_character(Char:Character)->void:
-	if !Party.isPartyFull() and Char.name != null:
+	if !Party.isPartyFull() and Char.Name != null:
 		Party.Add_Character.emit(Char)
 	else:
 		print("PARTY IS FULL")

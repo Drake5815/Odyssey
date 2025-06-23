@@ -12,7 +12,6 @@ signal Show_Setting_Screen
 @onready var Setting_Screen : Control = $"Pop-Up"
 
 var turn : int = 1
-var State: int = 0
 
 var setting_hover : bool = false
 
@@ -20,6 +19,9 @@ func _ready() -> void:
 	## CHANGE HEADER_TEXT TO EMPTY & CHANGE TURN TEXT = turn
 	Header_Texts.text = ""
 	Turn_Text.text = str(turn)
+	## SIGNALE CHANGE TEXT
+	self.set_HeaderText.connect(change_header_text)
+	self.set_TurnText.connect(change_turn_text)
 	## Hide Pop-Up
 	Setting_Screen.visible = false
 	self.Show_Setting_Screen.connect(setting_pop)
@@ -28,6 +30,11 @@ func setting_hovered()->void:
 	setting_hover = true
 func setting_exit_hover()->void:
 	setting_hover = false
+
+func change_header_text(value:String)->void:
+	Header_Texts.text = value
+func change_turn_text(value:String)->void:
+	Turn_Text.text = value
 
 func setting_pop()->void:
 	if !setting_hover:

@@ -12,10 +12,8 @@ func _ready() -> void:
 	Add_Character.connect(add_character_to_party)
 
 func add_character_to_party(value:Character)->void:
-	if index == 3 :
+	if index == 3 or value == null:
 		return
-	if value == null:
-		print("something")
 	value._setup()
 	value.to_string()
 	for card in CharacterCards_Array:

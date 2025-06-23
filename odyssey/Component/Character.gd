@@ -44,7 +44,7 @@ func _setup()->void:
 
 func Update_Modifier(name:String,value:float)->void:
 	if not Main_Stats.has(name):
-		push_error("Error " + name + " not found in Match_Stats")
+		push_error("Error : " + name + " not found in Match_Stats")
 		return
 	var stat : String
 	match name:
