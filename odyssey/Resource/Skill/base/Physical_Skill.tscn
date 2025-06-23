@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://iduxvf1du40e"]
+
+[ext_resource type="Script" uid="uid://ctr7tjefg00ti" path="res://Resource/Skill/base/physical_skill.gd" id="1_cdl1d"]
+
+[node name="PhysicalSkill" type="Node"]
+script = ExtResource("1_cdl1d")

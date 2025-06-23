@@ -1,22 +1,22 @@
-[gd_resource type="Resource" script_class="Character" load_steps=6 format=3 uid="uid://byb008rxw12ys"]
+[gd_resource type="Resource" script_class="Character" load_steps=4 format=3 uid="uid://0dhr7v3ll80k"]
 
-[ext_resource type="Resource" uid="uid://dwm4dsfh8sg1o" path="res://Resource/Damage/Base_ALMA_Damage.tres" id="1_4uxb2"]
-[ext_resource type="Script" uid="uid://bhmlo2x3y68na" path="res://Component/Character.gd" id="1_mspmm"]
-[ext_resource type="Resource" uid="uid://dtx3c1avayceq" path="res://Resource/Stats/Base_75.tres" id="2_epyqi"]
-[ext_resource type="Resource" uid="uid://clp270xvclgk1" path="res://Resource/Stats/Base_50.tres" id="3_2t4hd"]
-[ext_resource type="Texture2D" uid="uid://bij8p31f3tncu" path="res://Assets/Character_Icons/Alma.png" id="4_epyqi"]
+[ext_resource type="Script" uid="uid://lcolfjvje2ym" path="res://Component/Character.gd" id="1_mspmm"]
+[ext_resource type="Resource" uid="uid://dwm4dsfh8sg1o" path="res://Resource/Damage/Base_ALMA_Damage.tres" id="1_wuuqo"]
+[ext_resource type="Texture2D" uid="uid://bij8p31f3tncu" path="res://Assets/Character_Icons/Alma.png" id="2_4uxb2"]
 
 [resource]
 script = ExtResource("1_mspmm")
 Name = "Alma"
-Health = ExtResource("2_epyqi")
-Mana = ExtResource("3_2t4hd")
-Damage = ExtResource("1_4uxb2")
-Sprite_Icon = ExtResource("4_epyqi")
-Strength = 13
-Dexterity = 10
-Constitution = 12
-Intelligence = 10
-Wisdom = 13
-Charisma = 10
-metadata/_custom_type_script = "uid://bhmlo2x3y68na"
+Sprite = ExtResource("2_4uxb2")
+Health = 75.0
+Mana = 50.0
+Damage = ExtResource("1_wuuqo")
+Strength = 13.0
+Dexterity = 20.0
+Constitution = 8.0
+Intelligence = 11.0
+Wisdom = 13.0
+Charisma = 10.0
+Main_Modifier = 1
+skills = []
+metadata/_custom_type_script = "uid://lcolfjvje2ym"

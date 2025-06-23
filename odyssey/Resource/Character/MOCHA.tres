@@ -1,22 +1,22 @@
-[gd_resource type="Resource" script_class="Character" load_steps=6 format=3 uid="uid://cqub0lelbwobc"]
+[gd_resource type="Resource" script_class="Character" load_steps=4 format=3 uid="uid://cbfmrd8mpqvxd"]
 
-[ext_resource type="Resource" uid="uid://chq5uesfnu7ym" path="res://Resource/Damage/Base_MOCHA_Damage.tres" id="1_51jto"]
-[ext_resource type="Script" uid="uid://bhmlo2x3y68na" path="res://Component/Character.gd" id="1_ue42l"]
-[ext_resource type="Resource" uid="uid://dtx3c1avayceq" path="res://Resource/Stats/Base_75.tres" id="2_ei37r"]
-[ext_resource type="Resource" uid="uid://clp270xvclgk1" path="res://Resource/Stats/Base_50.tres" id="3_1yire"]
-[ext_resource type="Texture2D" uid="uid://yoslg12c3u23" path="res://Assets/Character_Icons/MOCHA.png" id="4_ei37r"]
+[ext_resource type="Resource" uid="uid://chq5uesfnu7ym" path="res://Resource/Damage/Base_MOCHA_Damage.tres" id="1_52gnp"]
+[ext_resource type="Script" uid="uid://lcolfjvje2ym" path="res://Component/Character.gd" id="1_ue42l"]
+[ext_resource type="Texture2D" uid="uid://yoslg12c3u23" path="res://Assets/Character_Icons/MOCHA.png" id="2_51jto"]
 
 [resource]
 script = ExtResource("1_ue42l")
 Name = "Mocha"
-Health = ExtResource("2_ei37r")
-Mana = ExtResource("3_1yire")
-Damage = ExtResource("1_51jto")
-Sprite_Icon = ExtResource("4_ei37r")
-Strength = 15
-Dexterity = 14
-Constitution = 12
-Intelligence = 11
-Wisdom = 4
-Charisma = 8
-metadata/_custom_type_script = "uid://bhmlo2x3y68na"
+Sprite = ExtResource("2_51jto")
+Health = 75.0
+Mana = 50.0
+Damage = ExtResource("1_52gnp")
+Strength = 6.0
+Dexterity = 9.0
+Constitution = 16.0
+Intelligence = 10.0
+Wisdom = 10.0
+Charisma = 20.0
+Main_Modifier = 5
+skills = []
+metadata/_custom_type_script = "uid://lcolfjvje2ym"

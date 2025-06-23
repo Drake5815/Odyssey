@@ -1,22 +1,22 @@
-[gd_resource type="Resource" script_class="Character" load_steps=6 format=3 uid="uid://bm5ycp3nw8rqw"]
+[gd_resource type="Resource" script_class="Character" load_steps=4 format=3 uid="uid://4agnqsrqclh6"]
 
-[ext_resource type="Resource" uid="uid://bhddl4a843j8d" path="res://Resource/Damage/Base_LYRA_Damage.tres" id="1_5lqrk"]
-[ext_resource type="Resource" uid="uid://ctmucy06u82ri" path="res://Resource/Stats/Base_70.tres" id="2_ifwrh"]
-[ext_resource type="Resource" uid="uid://i8tkwwj18u1p" path="res://Resource/Stats/Base_90.tres" id="3_q6wo7"]
+[ext_resource type="Resource" uid="uid://bhddl4a843j8d" path="res://Resource/Damage/Base_ALICIA_Damage.tres" id="1_dkplg"]
 [ext_resource type="Texture2D" uid="uid://dnpcihafdjcgf" path="res://Assets/Character_Icons/Alicia.png" id="4_bbphd"]
-[ext_resource type="Script" uid="uid://bhmlo2x3y68na" path="res://Component/Character.gd" id="5_vgtos"]
+[ext_resource type="Script" uid="uid://lcolfjvje2ym" path="res://Component/Character.gd" id="5_vgtos"]
 
 [resource]
 script = ExtResource("5_vgtos")
 Name = "Alicia"
-Health = ExtResource("2_ifwrh")
-Mana = ExtResource("3_q6wo7")
-Damage = ExtResource("1_5lqrk")
-Sprite_Icon = ExtResource("4_bbphd")
-Strength = 8
-Dexterity = 12
-Constitution = 10
-Intelligence = 18
-Wisdom = 15
-Charisma = 13
-metadata/_custom_type_script = "uid://bhmlo2x3y68na"
+Sprite = ExtResource("4_bbphd")
+Health = 70.0
+Mana = 90.0
+Damage = ExtResource("1_dkplg")
+Strength = 8.0
+Dexterity = 12.0
+Constitution = 10.0
+Intelligence = 18.0
+Wisdom = 15.0
+Charisma = 13.0
+Main_Modifier = 3
+skills = []
+metadata/_custom_type_script = "uid://lcolfjvje2ym"

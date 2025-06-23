@@ -24,11 +24,11 @@ func Insert_Character(character:Character)->void:
 	party_Character = character
 	has_Character = true
 	Character_Name.text = character.Name
-	Health_ProgressionBar.max_value = character.Main_Stats["Health"]
-	Health_ProgressionBar.value = character.Main_Stats["Health"]
-	Mana_ProgressionBar.max_value = character.Main_Stats["Mana"]
-	Mana_ProgressionBar.value = character.Main_Stats["Mana"]
-	Character_Icon.texture = character.Sprite_Icon
+	Health_ProgressionBar.max_value = character.Health
+	Mana_ProgressionBar.max_value = character.Mana
+	Health_ProgressionBar.value = character.Health
+	Mana_ProgressionBar.value = character.Mana
+	Character_Icon.texture = character.Sprite
 
 func Take_Damage(value:float)->void:
 	if Health_ProgressionBar.value - value == 0:
@@ -43,6 +43,3 @@ func Mana_Consumption(value:float)->void:
 		return
 	else:
 		Mana_ProgressionBar.value -= value
-
-func _update()->void:
-	pass

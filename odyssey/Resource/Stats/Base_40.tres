@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="Stat_Component" load_steps=2 format=3 uid="uid://dbf205ggltg2y"]
-
-[ext_resource type="Script" uid="uid://ca6ky3jva1kyp" path="res://Component/Stat_Component.gd" id="1_3n6tl"]
-
-[resource]
-script = ExtResource("1_3n6tl")
-max_value = 40.0
-metadata/_custom_type_script = "uid://ca6ky3jva1kyp"

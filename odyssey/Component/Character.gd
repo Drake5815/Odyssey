@@ -1,45 +1,33 @@
 class_name Character
-extends Character_Stats
-
-@export var Name : String
-
-@export var Health : Stat_Component
-@export var Mana : Stat_Component
-@export var Damage : Damage_Component
-
-@export var Sprite_Icon : Texture
-@export var Sprite_Full : Texture
-
-@export_range(1,30) var Strength : int
-@export_range(1,30) var Dexterity : int
-@export_range(1,30) var Constitution : int
-@export_range(1,30) var Intelligence : int
-@export_range(1,30) var Wisdom : int	
-@export_range(1,30) var Charisma : int
-
-var Inventory : Dictionary = {}
-
-var Armors : Dictionary = {}
-
-func _init()->void:
-	super(Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma)
-	Health = Stat_Component.new()
-	Mana = Stat_Component.new()
-	Damage = Damage_Component.new() 
-	self.Main_Stats["Health"] = Health.max_value + self.Modifier(Dexterity) + self.Modifier(Constitution)
-	self.Main_Stats["Mana"]   = self.Modifier(Wisdom) + self.Modifier(Charisma)
-	self.Main_Stats["Damage"] = self.Modifier(Strength) + self.Modifier(Intelligence)
-	Health.max_value = self.Main_Stats["Health"]
-	Mana.max_value = self.Main_Stats["Mana"]
-	Damage.Damage = self.Main_Stats["Damage"]
+extends Character_Component
 
 func _setup()->void:
-	self.Main_Stats["Health"] = Health.max_value + self.Modifier(Dexterity) + self.Modifier(Constitution)
-	self.Main_Stats["Mana"]   = Mana.max_value + self.Modifier(Wisdom) + self.Modifier(Charisma)
-	self.Main_Stats["Damage"] = Damage.Damage + self.Modifier(Strength) + self.Modifier(Intelligence)
-	Health.max_value = self.Main_Stats["Health"]
-	Mana.max_value = self.Main_Stats["Mana"]
-	Damage.Damage = self.Main_Stats["Damage"]
+	Health += _modifier(Strength) + _modifier(Constitution)
+	Mana += _modifier(Intelligence) + _modifier(Wisdom)
+
+func _modifier(stat_value:float)->float:
+	var mod_value : float = 0
+	match stat_value:
+		1.0 , 2.0 : mod_value = -5
+		3.0 , 4.0 : mod_value = -4
+		5.0 , 6.0 : mod_value = -3
+		7.0 , 8.0 : mod_value = -2
+		9.0 , 10.0 : mod_value = -1
+		11.0 , 12.0 : mod_value = 0
+		13.0 , 14.0 : mod_value = 1
+		15.0 , 16.0 : mod_value = 2
+		17.0 , 18.0 : mod_value = 3
+		19.0 , 20.0 : mod_value = 4
+		21.0 , 22.0 : mod_value = 5
+		23.0 , 24.0 : mod_value = 6
+		25.0 , 26.0 : mod_value = 7
+		27.0 , 28.0 : mod_value = 8
+		29.0 , 30.0 : mod_value = 9
+		_: mod_value = 10
+	return mod_value
+
+func basic_Damage()->float:
+	return Damage.damage() + _modifier(get_MainModifier())
 
 func _to_string() -> String:
-	return Name + " | Damage: " + str(self.Main_Stats["Damage"]) + " | Health: " + str(self.Main_Stats["Health"]) + " | Mana: " + str(self.Main_Stats["Mana"])
+	return Name + " | Health : " + str(Health) + " | Mana : " + str(Mana) + " | Main_Modifier : " + getString_MainModifier()

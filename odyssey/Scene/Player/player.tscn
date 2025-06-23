@@ -1,13 +1,15 @@
-[gd_scene load_steps=11 format=3 uid="uid://bvimwqccfblgj"]
+[gd_scene load_steps=13 format=3 uid="uid://bvimwqccfblgj"]
 
 [ext_resource type="PackedScene" uid="uid://no4boe8nsi7l" path="res://Scene/Player/player_card_gui.tscn" id="1_67a6e"]
 [ext_resource type="Script" uid="uid://bmc418hmocowm" path="res://Scene/Player/player.gd" id="1_g0r71"]
 [ext_resource type="Script" uid="uid://32p5571t0us" path="res://Scene/Player/Scripts/Party_script.gd" id="1_uuj77"]
-[ext_resource type="Script" uid="uid://bhmlo2x3y68na" path="res://Component/Character.gd" id="2_hklmv"]
+[ext_resource type="Script" uid="uid://lcolfjvje2ym" path="res://Component/Character.gd" id="2_hklmv"]
 [ext_resource type="PackedScene" uid="uid://nph57co4i4fx" path="res://Scene/Player/NavBar_Action.tscn" id="2_yic5t"]
-[ext_resource type="Resource" uid="uid://bm5ycp3nw8rqw" path="res://Resource/Character/ALICIA.tres" id="3_wagb4"]
+[ext_resource type="Resource" uid="uid://4agnqsrqclh6" path="res://Resource/Character/ALICIA.tres" id="3_wagb4"]
+[ext_resource type="Resource" uid="uid://biunkbge8b13h" path="res://Resource/Character/RAVEN.tres" id="4_hklmv"]
 [ext_resource type="Script" uid="uid://b3ig4hnk3i7jh" path="res://Scene/Player/movement_state.gd" id="5_88wa8"]
 [ext_resource type="Script" uid="uid://vaxrttwqdl1v" path="res://Scene/Player/state_machine.gd" id="5_jd8gp"]
+[ext_resource type="Resource" uid="uid://0dhr7v3ll80k" path="res://Resource/Character/ALMA.tres" id="5_wagb4"]
 [ext_resource type="Script" uid="uid://cw0hn2mq7nhh" path="res://Scene/Player/battle_state.gd" id="7_ewflj"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a1qst"]
@@ -16,7 +18,7 @@
 script = ExtResource("1_g0r71")
 Camera = NodePath("SubViewportContainer/SubViewport/Camera3D")
 Party = NodePath("GUI/Party")
-char_arr = Array[ExtResource("2_hklmv")]([ExtResource("3_wagb4")])
+char_arr = Array[ExtResource("2_hklmv")]([ExtResource("3_wagb4"), ExtResource("4_hklmv"), ExtResource("5_wagb4")])
 
 [node name="Front" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -8.74228e-08, -1, 0, 2, -4.37114e-08, 0, 0, 0)
