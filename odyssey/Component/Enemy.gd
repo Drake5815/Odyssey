@@ -2,9 +2,11 @@ class_name Enemy
 extends Character_Component
 
 enum monster_size {
-	Small = 1,
-	Medium = 2,
-	Large = 3
+	Small = 0,
+	Medium = 1,
+	Large = 2,
+	miniBoss = 3,
+	BOSS = 5
 }
 
 @export_group("EXTRA MONSTER VALUES")

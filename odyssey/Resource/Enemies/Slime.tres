@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=2 format=3 uid="uid://cf3jswfk2ein4"]
+
+[ext_resource type="Script" uid="uid://btfiaied727vf" path="res://Component/Enemy.gd" id="1_fru1d"]
+
+[resource]
+script = ExtResource("1_fru1d")
+Monster_Size = 0
+Name = "Slime"
+Health = 0.0
+Mana = 0.0
+Strength = 0.0
+Dexterity = 0.0
+Constitution = 0.0
+Intelligence = 0.0
+Wisdom = 0.0
+Charisma = 0.0
+Main_Modifier = 0
+skills = []
+metadata/_custom_type_script = "uid://btfiaied727vf"

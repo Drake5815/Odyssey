@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://12vaegnef8v7"]
+[gd_scene load_steps=2 format=3 uid="uid://12vaegnef8v7"]
+
+[ext_resource type="Script" uid="uid://rupeol3ccgte" path="res://Scene/Enemies/enemy_script.gd" id="1_f3si1"]
 
 [node name="Enemies" type="Node3D"]
+script = ExtResource("1_f3si1")
