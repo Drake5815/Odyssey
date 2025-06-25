@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://1j10ryh5djpn"]
+
+[sub_resource type="Animation" id="Animation_5ofon"]
+resource_name = "NORMAL_BATTLE_TRANSITION"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_f80ks"]
+_data = {
+&"NORMAL_BATTLE_TRANSITION": SubResource("Animation_5ofon")
+}
+
+[node name="Battle_Transition" type="AnimationPlayer"]
+libraries = {
+&"": SubResource("AnimationLibrary_f80ks")
+}
