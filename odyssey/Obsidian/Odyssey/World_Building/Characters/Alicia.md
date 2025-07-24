@@ -1,0 +1,30 @@
+- Actual Character Ref : Alice Pleasance Liddell
+- After the events of "Alice in Wonderland" and In the "Through the Looking Glass"
+- Things Important in "Alice in Wonderland"
+	- Themes :
+		- Growth and transformation, identity, logic vs. nonsense, the absurdities of the adult world, rules and games.
+	- Summary :
+		- Alice, a curious young girl, tumbles down a rabbit hole into a fantastical world populated by eccentric characters. She encounters a White Rabbit, a philosophical Caterpillar, a grinning Cheshire Cat, and attends a chaotic Mad Tea-Party. Her adventures culminate in a nonsensical trial for the Knave of Hearts, where she grows to giant size and challenges the illogical proceedings, before waking up to realize it was all a dream. The story is a whimsical exploration of logic, identity, and the absurdities of the adult world.
+- Things Important in "Through the Looking Glass"
+	- Themes :
+		- Reversal and inversions, identity, the nature of time, poetry and language, dreams.\
+	- Summary :
+		- In this sequel, Alice steps through a mirror into an inverted world that resembles a chessboard. She becomes a pawn in a living chess game, meeting talking flowers, the quarrelsome Tweedledum and Tweedledee, the scatterbrained White Queen, and the wise Humpty Dumpty. As she travels across the squares, encountering various knights and creatures, she aims to reach the eighth square to become a Queen. The journey is filled with riddles, poems, and inverted logic, ultimately revealing itself to be another vivid dream upon her awakening.
+-------------------------------------------------------------------------------------------------------------
+- Alicia as a Character :
+	- she is a young and petite girl in the age of 18
+	- was mostly based as the protagonist in the stories "Alice in Wonderland" and "Through the Looking-Glass"
+- Abilities and Skills :
+	- Passive : Promotion
+		- Alicia first set marks an enemy ; marks enemy on basic attack
+		- Enhances Alicia with enhanced Stats boosts depending on Enemy defeated. By her and/or teammates.
+			- Rook   : Increases Defense 15%
+			- Horse  : Increases Speed 10%
+			- Bishop : Increases Attack 15% 
+			- All lasting for 2 turns of rotation
+	- Skill 1 : Potion - "Drink Me"
+		- Improves Evasion and Speed by 2 turns / 1 ally or herself ; reset on Alicia's turn
+	- Skill 2 : Cake - "Eat Me"
+		- Heals the Party depending on the missing Hp of Alicia ; (Missing Hp / 2 * 0.75)
+	- Ultimate : Queen
+			- Increases all Stats by 25% also Giving Alicia another turn and give her 75% attack boost for 1 turn

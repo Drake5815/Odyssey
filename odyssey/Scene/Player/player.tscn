@@ -14,14 +14,16 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_a1qst"]
 
-[node name="Player" type="Node3D" node_paths=PackedStringArray("Camera", "Party")]
+[node name="Player" type="Node3D" node_paths=PackedStringArray("Camera", "Party", "State")]
 script = ExtResource("1_g0r71")
 Camera = NodePath("SubViewportContainer/SubViewport/Camera3D")
 Party = NodePath("GUI/Party")
+State = NodePath("State_Machine")
 char_arr = Array[ExtResource("2_hklmv")]([ExtResource("3_wagb4"), ExtResource("4_hklmv"), ExtResource("5_wagb4")])
 
 [node name="Front" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -8.74228e-08, -1, 0, 2, -4.37114e-08, 0, 0, 0)
+collide_with_areas = true
 
 [node name="Back" type="RayCast3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -8.74228e-08, 1, 0, -2, -4.37114e-08, 0, 0, 0)

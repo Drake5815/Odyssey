@@ -16,8 +16,8 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-GameManager="*res://Component/game_manager.gd"
-CombatManager="*res://Component/combat_manager.gd"
+GameManager="*res://Component/Management_Scripts/game_manager.gd"
+CombatManager="*res://Component/Management_Scripts/combat_manager.gd"
 
 [display]
 

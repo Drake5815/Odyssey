@@ -1,4 +1,4 @@
-class_name enemy_script
+class_name Enemies
 extends Node3D
 
 @export var enemies : Array[Enemy]
@@ -8,6 +8,9 @@ const enemy_size_row = 4
 const enemy_size_column = 2
 
 var current_size : int = enemy_size_limit
+
+func enemy_encounter()->void:
+	print("")
 
 func check_enemy_sizes()->Array:
 	var new_arr : Array[Enemy]

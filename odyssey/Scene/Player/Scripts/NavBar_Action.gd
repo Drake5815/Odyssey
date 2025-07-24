@@ -12,7 +12,6 @@ signal Show_Setting_Screen
 @onready var Setting_Screen : Control = $"Pop-Up"
 
 var turn : int = 1
-
 var setting_hover : bool = false
 
 func _ready() -> void:

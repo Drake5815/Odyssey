@@ -1,0 +1,195 @@
+{
+  "main": {
+    "id": "06c53043d58568b7",
+    "type": "split",
+    "children": [
+      {
+        "id": "d4596d9edb0306b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0a64636697069b44",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "World_Building/Story.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Story"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3e214afc04d21e22",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ee34f9ff3b64ba2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9f111729147ea949",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "cd2e5e08b4884f6b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "d355eae1eeb9089f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a9e42c03e307ef7f",
+    "type": "split",
+    "children": [
+      {
+        "id": "8bf83f52179256f2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6ecd0f70b6aaa875",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "World_Building/Story.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Story"
+            }
+          },
+          {
+            "id": "206b21b01255e6d5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "World_Building/Story.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Story"
+            }
+          },
+          {
+            "id": "e237661999ad0bd2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "2114d368d14a73fa",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "World_Building/Story.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Story"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "0a64636697069b44",
+  "lastOpenFiles": [
+    "Images/Pasted Image 20250720072928_830.png.import",
+    "Images/Pasted Image 20250720072945_479.png.import",
+    "World_Building/STORY BOARD.md",
+    "World_Building/Story.md",
+    "World_Building/Characters/Raven.md",
+    "World_Building/Characters/Alicia.md",
+    "World_Building/Characters/Alma.md",
+    "World_Building/Characters/Alicia/Drawing and Reference.md",
+    "Images/Pasted Image 20250720072945_479.png",
+    "Images",
+    "Images/Pasted Image 20250720072928_830.png",
+    "Pasted Image 20250720072928_830.png.import",
+    "Pasted Image 20250720072945_479.png.import",
+    "Excalidraw",
+    "World_Building/Characters.md",
+    "World_Building/Characters/Alicia",
+    "World_Building/Characters",
+    "Welcome.md",
+    "Mechanics",
+    "World_Building"
+  ]
+}

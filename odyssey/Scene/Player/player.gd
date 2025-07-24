@@ -7,6 +7,8 @@ extends Node3D
 
 @export var char_arr : Array[Character]
 
+@onready var Front = $Front
+
 func _ready() -> void:
 	for char in char_arr:
 		recruit_character(char)
@@ -23,3 +25,10 @@ func Camera_Positon()->void:
 
 func _process(delta: float) -> void:
 	Camera_Positon()
+	if Front.is_colliding():
+		var collider = Front.get_collider()
+		if collider!=null:
+			var parent = collider.get_parent()
+			if parent is Enemies:
+				print("encounter")
+				State.Encounter.emit()

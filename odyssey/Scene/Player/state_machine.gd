@@ -18,6 +18,8 @@ func _ready() -> void:
 func on_Encounter()->void:
 	Movement_State.Active = false
 	Combat_State.Active = true 
+	
+	Combat_State.Engage.emit()
 
 func on_Finish()->void:
 	Movement_State.Active = true
