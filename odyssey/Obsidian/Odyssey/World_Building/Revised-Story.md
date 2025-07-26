@@ -1,0 +1,16 @@
+-> Introduction to the story:
+	- let our main character start at an empty desolate room with bricked walls that surrounds him
+	- before he ca get up he has this sudden surge of electricity in his head
+	- Player is then having a flashback of this war driven and death stricken scene and a feeling of pain that resides with emptiness a frightening state of death and living as you gave it your all to keep your eyes wide open the heaviness of your eye-lids become more and more heavier by the second.
+	- though in the distance you seem to find a lady with a black dress, with torn ends and a veil covering her face. she comes ever closer to you.
+	- she reaches out... then vanishes into thin air onto the black mist.
+	- as you lay there looking into the sky pondering of your life... she suddenly appear in-front of you shocking you even in your weakened state.
+	- as she hovers on-top of you she comes closer to your ear and with a feint sound she says "you may not rest yet... for your soul has yet to finish its adventure... old friend"
+	- when she lifts her head again you faintly see her face half dead and half alive... though her right side being that of a rotting skull and the left that of a beautiful maiden, you but feel a sense of warmth in her gaze and feels similar
+	- as you are finally about to close your eyes, she smiles at you and says "I'll see you again..."
+	- you are snapped back to your reality of a desolate room gasping for air and as cold sweat drops down your head... you look around you but nothing is there... its just a empty room... so you decided to stand up...
+	- "Ugh... what was that?" you pondered about the dream, it felt as it was real and that your life actually ended
+	- "First of all where am I?" you investigated all around the room but nothing is there but  a door far into the center end of the room...
+	- as you touch the door knob, you are suddenly sucked in into a prophetic dream of a sleeping girl who is about to be attacked by a monster...
+	- then suddenly you are welcomed with the same of darkness within the dream you just felt, as cold sweat shiver down your head.
+	- 

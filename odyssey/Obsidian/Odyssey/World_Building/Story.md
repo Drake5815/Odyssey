@@ -12,7 +12,7 @@ After awaken into an unknown place u vaguely have a call black of a woman shroud
 
 -> insert into introduction to movement
 
-After going a little around the area you seemingly find a broken statue of a dog... with this revelation a voice would call out "you're awake?" (-insert response) "you should go further the right path to find me." (-insert response) "I shall be waiting for you... if you are still alive that is... haha..." (-insert response)
+After going a little around the area you seemingly find a broken statue of a dog... with this revelation a voice would call out "you're awake?" (-insert response) "you should go further the correct path to find me." (-insert response) "I shall be waiting for you... if you are still alive that is... haha..." (-insert response)
 
 -> player go further down a path
 - Left door of the labyrinth would lead into a room of a caterpillar speaks only on riddles and berates and belittle the player through his riddles
