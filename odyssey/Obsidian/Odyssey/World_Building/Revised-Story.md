@@ -6,7 +6,7 @@
 	- she reaches out... then vanishes into thin air onto the black mist.
 	- as you lay there looking into the sky pondering of your life... she suddenly appear in-front of you shocking you even in your weakened state.
 	- as she hovers on-top of you she comes closer to your ear and with a feint sound she says "you may not rest yet... for your soul has yet to finish its adventure... old friend"
-	- when she lifts her head again you faintly see her face half dead and half alive... though her right side being that of a rotting skull and the left that of a beautiful maiden, you but feel a sense of warmth in her gaze and feels similar
+	- when she lifts her head again you faintly see her face half dead and half alive... though her right side being that of a rotting skull and the left that of a beautiful maiden, you but feel a sense of warmth in her gaze and it feels similar
 	- as you are finally about to close your eyes, she smiles at you and says "I'll see you again..."
 	- you are snapped back to your reality of a desolate room gasping for air and as cold sweat drops down your head... you look around you but nothing is there... its just a empty room... so you decided to stand up...
 	- "Ugh... what was that?" you pondered about the dream, it felt as it was real and that your life actually ended

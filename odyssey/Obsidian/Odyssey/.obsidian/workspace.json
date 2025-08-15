@@ -11,14 +11,12 @@
             "id": "0a64636697069b44",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "World_Building/Story.md",
-                "mode": "source",
-                "source": false
+                "file": "World_Building/STORY BOARD.md"
               },
-              "icon": "lucide-file",
-              "title": "Story"
+              "icon": "excalidraw-icon",
+              "title": "STORY BOARD"
             }
           }
         ]
@@ -171,16 +169,16 @@
   },
   "active": "0a64636697069b44",
   "lastOpenFiles": [
-    "World_Building/Revised-Story.md",
-    "Images/Pasted Image 20250720072928_830.png",
-    "Images/Pasted Image 20250720072945_479.png",
-    "World_Building/Characters/Alicia.md",
     "World_Building/Story.md",
+    "World_Building/Revised-Story.md",
+    "World_Building/Characters/Alicia.md",
+    "World_Building/STORY BOARD.md",
+    "World_Building/Characters/Alma.md",
+    "Images/Pasted Image 20250720072945_479.png",
+    "Images/Pasted Image 20250720072928_830.png",
     "Images/Pasted Image 20250720072928_830.png.import",
     "Images/Pasted Image 20250720072945_479.png.import",
-    "World_Building/STORY BOARD.md",
     "World_Building/Characters/Raven.md",
-    "World_Building/Characters/Alma.md",
     "World_Building/Characters/Alicia/Drawing and Reference.md",
     "Images",
     "Pasted Image 20250720072928_830.png.import",

@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5tcjmredm01m"]
+
+[ext_resource type="Script" uid="uid://cco5edxfewo5y" path="res://Scene/GUI/dialog_system.gd" id="1_tfgwj"]
+[ext_resource type="Script" uid="uid://d2ctk7y4xw0pv" path="res://addons/ez_dialogue/ez_dialogue_node.gd" id="2_2mwif"]
+
+[node name="Dialog_System" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_tfgwj")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 580.0
+offset_top = 560.0
+offset_right = 620.0
+offset_bottom = 600.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="Text" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="EzDialogue" type="Node" parent="."]
+script = ExtResource("2_2mwif")
+metadata/_custom_type_script = "uid://d2ctk7y4xw0pv"
+
+[connection signal="dialogue_generated" from="EzDialogue" to="." method="_on_ez_dialogue_dialogue_generated"]
