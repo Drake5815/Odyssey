@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Odyssey"
+run/main_scene="uid://d3341b5a3nxf3"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -23,6 +24,10 @@ CombatManager="*res://Component/Management_Scripts/combat_manager.gd"
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+window/size/resizable=false
+window/size/borderless=true
+window/stretch/mode="viewport"
+window/vsync/vsync_mode=0
 
 [dotnet]
 

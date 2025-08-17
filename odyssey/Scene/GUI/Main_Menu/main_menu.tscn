@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://d3341b5a3nxf3"]
+
+[ext_resource type="Texture2D" uid="uid://dqs32otdkmqwa" path="res://Assets/prop/MainMenu_and_Logo.png" id="1_7ktct"]
+[ext_resource type="Script" uid="uid://bkdm1oplan45f" path="res://Scene/GUI/Main_Menu/MainMenu_Script.gd" id="1_dwup6"]
+[ext_resource type="FontFile" uid="uid://mox41qh8pgaj" path="res://Assets/Fonts/FreeSansBold.otf" id="2_m07ya"]
+[ext_resource type="Script" uid="uid://by25qxk667cx7" path="res://Scene/GUI/Main_Menu/Button_Script.gd" id="3_dwup6"]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_dwup6")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_7ktct")
+
+[node name="Button_Play" type="Button" parent="."]
+offset_left = 545.0
+offset_top = 440.0
+offset_right = 611.0
+offset_bottom = 480.0
+theme_override_colors/font_hover_color = Color(0.564706, 0.933333, 0.564706, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_m07ya")
+theme_override_font_sizes/font_size = 28
+text = "Play"
+flat = true
+script = ExtResource("3_dwup6")
+metadata/_custom_type_script = "uid://by25qxk667cx7"
+
+[node name="Button_Option" type="Button" parent="."]
+offset_left = 530.0
+offset_top = 490.0
+offset_right = 629.0
+offset_bottom = 530.0
+theme_override_colors/font_hover_color = Color(0.564706, 0.933333, 0.564706, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_m07ya")
+theme_override_font_sizes/font_size = 28
+text = "Option"
+flat = true
+script = ExtResource("3_dwup6")
+metadata/_custom_type_script = "uid://by25qxk667cx7"
+
+[node name="Button_Exit" type="Button" parent="."]
+offset_left = 548.0
+offset_top = 540.0
+offset_right = 607.0
+offset_bottom = 580.0
+theme_override_colors/font_hover_color = Color(0.564706, 0.933333, 0.564706, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_m07ya")
+theme_override_font_sizes/font_size = 28
+text = "Exit"
+flat = true
+script = ExtResource("3_dwup6")
+metadata/_custom_type_script = "uid://by25qxk667cx7"

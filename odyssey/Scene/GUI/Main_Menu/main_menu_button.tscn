@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://t1fkq8emtmqb"]
+
+[ext_resource type="FontFile" uid="uid://mox41qh8pgaj" path="res://Assets/Fonts/FreeSansBold.otf" id="1_oxp6g"]
+[ext_resource type="Script" uid="uid://by25qxk667cx7" path="res://Scene/GUI/Main_Menu/Button_Script.gd" id="2_w27fg"]
+
+[node name="MainMenu_Button" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_colors/font_hover_color = Color(0.564706, 0.933333, 0.564706, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_oxp6g")
+theme_override_font_sizes/font_size = 28
+text = "Example Text"
+flat = true
+icon_alignment = 1
+script = ExtResource("2_w27fg")
