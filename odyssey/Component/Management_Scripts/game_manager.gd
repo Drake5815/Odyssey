@@ -5,9 +5,6 @@ signal pause
 signal exit
 signal save
 
-const MainMenu_Window = Vector2i(800, 600)
-const Game_Window = Vector2i(1280,720)
-
 var player_node
 var current_scene
 
@@ -16,16 +13,18 @@ func _ready() -> void:
 	self.pause.connect(_pause)
 	self.exit.connect(_exit)
 	self.save.connect(save_game)
+	## DISPLAY SIZE
+	get_viewport().size = DisplayServer.window_get_size()
 
 ###########################
 ## GAME SCENE TRANSITION ##
 ###########################
-func main_menu()->void:
-	DisplayServer.window_set_size(MainMenu_Window)
-	get_tree().change_scene_to_file("res://Scene/GUI/main_menu.tscn")
+func transition_change(scene:String)->void:
+	get_tree().change_scene_to_file(scene)
 
-func Game_Initialize()->void:
-	DisplayServer.window_set_size(Game_Window)
+func add_option_scree()->void:
+	var option = load("res://Scene/GUI/Option/Option.tscn").instantiate()
+	get_tree().root.add_child(option)
 
 ######################
 ## SIGNAL FUNCTIONS ##

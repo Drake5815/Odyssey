@@ -1,0 +1,62 @@
+[gd_scene load_steps=4 format=3 uid="uid://ck7bo0nis6xnt"]
+
+[ext_resource type="FontFile" uid="uid://dd3083x8cbbb8" path="res://Assets/Fonts/FreeSans.otf" id="1_66kti"]
+[ext_resource type="FontFile" uid="uid://mox41qh8pgaj" path="res://Assets/Fonts/FreeSansBold.otf" id="2_tq3rb"]
+[ext_resource type="Script" uid="uid://by25qxk667cx7" path="res://Scene/GUI/Main_Menu/Button_Script.gd" id="3_1gnai"]
+
+[node name="Option" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 20.0
+offset_right = 1170.0
+offset_bottom = 700.0
+theme_override_fonts/font = ExtResource("1_66kti")
+theme_override_font_sizes/font_size = 24
+current_tab = 0
+
+[node name="Game Option" type="Control" parent="TabContainer"]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="How To Play" type="Control" parent="TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="MainMenu_Button" type="Button" parent="TabContainer/How To Play"]
+layout_mode = 0
+offset_left = 980.0
+offset_top = 600.0
+offset_right = 1083.0
+offset_bottom = 640.0
+theme_override_colors/font_hover_color = Color(0.564706, 0.933333, 0.564706, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_tq3rb")
+theme_override_font_sizes/font_size = 28
+text = "Next ->"
+flat = true
+script = ExtResource("3_1gnai")
+btnNormal = Color(1, 1, 1, 1)
+btnHover = Color(0, 0, 1, 1)
+metadata/_custom_type_script = "uid://by25qxk667cx7"
+
+[node name="MainMenu_Button2" type="Button" parent="TabContainer/How To Play"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 600.0
+offset_right = 181.0
+offset_bottom = 640.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_tq3rb")
+theme_override_font_sizes/font_size = 28
+text = "<- Previous"
+flat = true
+script = ExtResource("3_1gnai")
+btnNormal = Color(1, 1, 1, 1)
+btnHover = Color(0, 0, 1, 1)
+metadata/_custom_type_script = "uid://by25qxk667cx7"
